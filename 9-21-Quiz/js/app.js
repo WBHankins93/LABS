@@ -50,3 +50,24 @@ const something = () => {
   return nothing;
 }
 console.log(something().obj1[1]);
+
+
+// CREATE A CALLBACK
+
+//Define two functions and set them to variables
+
+//The second function takes a parameter
+
+//Call the second function, passing in the variable that references the
+//first function as the parameter
+
+//In the definition of the second function, invoke (call) the parameter
+//that is being passed into it. Remember, this parameter is a function
+
+const functOne = () => {
+  console.log('Func yeah');
+}
+const functTwo = (parameter) => {
+  return parameter;
+}
+functTwo(functOne());
